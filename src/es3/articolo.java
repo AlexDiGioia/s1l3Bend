@@ -8,6 +8,14 @@ public class articolo {
     private double prezzo;
     private int quantiDisponibili;
 
+    public articolo(String descrizione, double prezzo, int quantiDisponibili) {
+        Random rand = new Random();
+        this.id = rand.nextInt(10001);
+        this.descrizione = descrizione;
+        this.prezzo = prezzo;
+        this.quantiDisponibili = quantiDisponibili;
+    }
+
     public void setPrezzo(double prezzo) {
         this.prezzo = prezzo;
     }
@@ -20,13 +28,6 @@ public class articolo {
         this.descrizione = descrizione;
     }
 
-    public articolo(String descrizione, double prezzo, int quantiDisponibili) {
-        Random rand = new Random();
-        this.id = rand.nextInt(10001);
-        this.descrizione = descrizione;
-        this.prezzo = prezzo;
-        this.quantiDisponibili = quantiDisponibili;
-    }
 
     public String getDescrizione() {
         return descrizione;
@@ -45,8 +46,8 @@ public class articolo {
         return "articolo{" +
                 "id=" + id +
                 ", descrizione='" + descrizione + '\'' +
-                ", prezzo=" + prezzo +
-                ", quantiDisponibili=" + quantiDisponibili +
+                ", prezzo=" + prezzo + "€" +
+                ", quantiDisponibili: " + quantiDisponibili +
                 '}';
     }
 }

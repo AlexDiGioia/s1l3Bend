@@ -39,6 +39,6 @@ public class carrello {
                 "\nclienteAssociato: " + clienteAssociato +
                 "\narticoli: " + Arrays.toString(articoli) +
                 "\ntotCosto: " + totCosto +
-                "\n--------------------------";
+                "\n-------------------------------\n";
     }
 }

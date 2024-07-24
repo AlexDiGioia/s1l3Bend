@@ -11,7 +11,9 @@ public class Main {
 
         carrello carrello1 = new carrello(articoliNelCarrello, cliente1);
 
-        System.out.println(carrello1);
+        System.out.println("----------CLIENTE-----------\n" + cliente1);
+
+        System.out.println("\n" + carrello1);
 
     }
 }

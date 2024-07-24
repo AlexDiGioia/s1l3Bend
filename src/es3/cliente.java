@@ -42,11 +42,11 @@ public class cliente {
 
     @Override
     public String toString() {
-        return "cliente{" +
-                "id=" + id +
-                ", nomeCognome='" + nomeCognome + '\'' +
-                ", email='" + email + '\'' +
-                ", dataIscrizione='" + dataIscrizione + '\'' +
-                '}';
+        return "cliente: " +
+                "id: " + id +
+                ", \nNome e cognome='" + nomeCognome + '\'' +
+                ", \nEmail: '" + email + '\'' +
+                ", \nData d'iscrizione: '" + dataIscrizione + '\''
+                ;
     }
 }
